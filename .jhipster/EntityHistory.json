@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20250128194407"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "userLogin",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "entityName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "entityId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "actionType",
+      "fieldType": "Action",
+      "fieldValues": "CREATE,UPDATE,DELETE"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "Blob"
+    },
+    {
+      "fieldName": "creationDate",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "EntityHistory",
+  "relationships": [],
+  "searchEngine": "no"
+}
